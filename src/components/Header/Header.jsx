@@ -1,7 +1,7 @@
 import profile from '../../assets/logo.png'
 import { BsCoin } from "react-icons/bs";
 import './Header.css'
-const Header = () => {
+const Header = ({freeCredit}) => {
     return (
         <div className=" flex items-center justify-between mt-8 h-18">
 
@@ -15,7 +15,7 @@ const Header = () => {
                     <li className='btn-hover mt-2 text-gray-600'>Teams</li>
                     <li className='btn-hover mt-2 text-gray-600'>Schedules</li>
                     <div className='coin-d flex items-center gap-2'>
-                        <p className=''>Coin</p>
+                        <p className=''> {freeCredit} Coin</p>
                         <div><BsCoin></BsCoin></div>
 
                     </div>
