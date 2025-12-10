@@ -1,5 +1,6 @@
 
 import './App.css'
+import Header from './components/Header/Header'
 
 function App() {
 
@@ -7,7 +8,9 @@ function App() {
     <>
       <div className='px-10'>
 
-        <h1>Welcome to the cricket world.</h1>
+        <header>
+          <Header></Header>
+        </header>
         
       </div>
     </>

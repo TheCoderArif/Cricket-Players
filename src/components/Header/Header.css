@@ -1,0 +1,16 @@
+.btn-hover:hover{
+    border: 1px solid gray;
+    border-radius: 10px;
+    /* margin: 15px; */
+    padding: 4px;
+    /* padding-top: 3px; */
+
+}
+
+.coin-d{
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 10px;
+}
