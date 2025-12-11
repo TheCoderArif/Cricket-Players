@@ -10,10 +10,13 @@ const Header = ({freeCredit}) => {
             </div>
             <div className="buttons">
                 <ul className='flex gap-10 '>
-                    <li className='mt-2 btn-hover text-gray-600'>Home</li>
-                    <li className='btn-hover mt-2 text-gray-600'>Fixture</li>
-                    <li className='btn-hover mt-2 text-gray-600'>Teams</li>
-                    <li className='btn-hover mt-2 text-gray-600'>Schedules</li>
+
+                    <button className="text-gray-600 btn btn-ghost">Home</button>
+                    <button className="btn btn-ghost text-gray-600">Fixture</button>
+                    <button className="btn btn-ghost text-gray-600">Teams</button>
+                    <button className="btn btn-ghost text-gray-600">Schedules</button>
+
+                   
                     <div className='coin-d flex items-center gap-2'>
                         <p className=''> {freeCredit} Coin</p>
                         <div><BsCoin></BsCoin></div>

@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Virat Kohli",
+    "img": "https://i.ibb.co.com/k2dvb0PN/Virat-Kohli-2-1.webp",
+    "region": "India",
+    "playing_type": "Batsman",
+    "hand": "Right-hand bat",
+    "rating": 94,
+    "price": 1850000
+  },
+  {
+    "id": 2,
+    "name": "Joe Root",
+    "img": "https://i.ibb.co.com/yF46hbvf/joe-root-portrait-31krp0eo0xyw2om5.jpg",
+    "region": "England",
+    "playing_type": "Batsman",
+    "hand": "Right-hand bat",
+    "rating": 91,
+    "price": 1700000
+  },
+  {
+    "id": 3,
+    "name": "Kane Williamson",
+    "img": "https://i.ibb.co.com/7NWqtt6b/Kane-Williamson1.jpg",
+    "region": "New Zealand",
+    "playing_type": "Batsman",
+    "hand": "Right-hand bat",
+    "rating": 92,
+    "price": 1750000
+  },
+  {
+    "id": 4,
+    "name": "Babar Azam",
+    "img": "https://i.ibb.co.com/Z6YqZjkT/409142.webp",
+    "region": "Pakistan",
+    "playing_type": "Batsman",
+    "hand": "Right-hand bat",
+    "rating": 93,
+    "price": 1800000
+  },
+  {
+    "id": 5,
+    "name": "Jasprit Bumrah",
+    "img": "https://i.ibb.co.com/FrNRdf3/sdagsdfg.webp",
+    "region": "India",
+    "playing_type": "Bowler",
+    "hand": "Right-arm fast",
+    "rating": 96,
+    "price": 2000000
+  },
+  {
+    "id": 6,
+    "name": "Pat Cummins",
+    "img": "https://i.ibb.co.com/xvvxBYh/ggfhfdhsh.webp",
+    "region": "Australia",
+    "playing_type": "Bowler",
+    "hand": "Right-arm fast",
+    "rating": 94,
+    "price": 1950000
+  },
+  {
+    "id": 7,
+    "name": "Ben Stokes",
+    "img": "https://i.ibb.co.com/8gM13XL3/fgdsg.jpg",
+    "region": "England",
+    "playing_type": "All-Rounder",
+    "hand": "Left-hand bat / Right-arm fast-medium",
+    "rating": 92,
+    "price": 1850000
+  },
+  {
+    "id": 8,
+    "name": "Rashid Khan",
+    "img": "https://i.ibb.co.com/0Vfr3BSc/dsfgasgs.webp",
+    "region": "Afghanistan",
+    "playing_type": "Bowler",
+    "hand": "Right-arm leg-spin",
+    "rating": 93,
+    "price": 1900000
+  }
+]
