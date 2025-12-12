@@ -1,9 +1,10 @@
 import { MdDeleteForever } from "react-icons/md";
 import './SelectedPlayers.css'
 
-const SelectedPlayers = ({ player }) => {
+const SelectedPlayers = ({ player, handleRemovePlayer }) => {
   const {img,  name , playing_type } = player;
   return (
+    <div>
     <div className="flex justify-between bg-amber-50 items-center my-card">
 
     <div className="flex items-center">
@@ -17,9 +18,11 @@ const SelectedPlayers = ({ player }) => {
     </div>
 
     <div>
-        <button className="btn btn-sm"><MdDeleteForever></MdDeleteForever></button>
+        <button onClick={() => handleRemovePlayer(player)}  className="btn btn-sm"><MdDeleteForever></MdDeleteForever></button>
     </div>
 
+    </div>
+    
     </div>
   );
 };

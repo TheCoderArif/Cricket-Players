@@ -34,6 +34,8 @@ function App() {
     }
   }
 
+
+
   return (
     <>
     <div className="">
@@ -49,7 +51,7 @@ function App() {
         </section>
 
         <section>
-          <BtnSection setFreeCredit={setFreeCredit} freeCredit={freeCredit} handleAS={handleAS} isActive={isActive}></BtnSection>
+          <BtnSection  setFreeCredit={setFreeCredit} freeCredit={freeCredit} handleAS={handleAS} isActive={isActive}></BtnSection>
         </section>
 
         

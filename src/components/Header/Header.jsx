@@ -18,7 +18,7 @@ const Header = ({freeCredit}) => {
 
                    
                     <div className='coin-d flex items-center gap-2'>
-                        <p className=''> {freeCredit} Coin</p>
+                        <p className=''> {freeCredit} {freeCredit? 'Coins' : 'Coin'}</p>
                         <div><BsCoin></BsCoin></div>
 
                     </div>

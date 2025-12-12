@@ -14,6 +14,20 @@ const BtnSection = ({ handleAS, isActive, freeCredit, setFreeCredit }) => {
   };
 
   const [choosePlayer, setChoosePlayer] = useState([]);
+
+
+  const handleRemovePlayer = data => {
+
+    const afterRemove = choosePlayer.filter(player => player.id !== data.id)
+    const newCredit = freeCredit + data.price ;
+    setFreeCredit(newCredit);
+    setChoosePlayer(afterRemove);
+  }
+
+
+
+
+
   const handleChoosePlayer = (player) => {
     if (freeCredit > player.price){
 
@@ -81,7 +95,7 @@ const BtnSection = ({ handleAS, isActive, freeCredit, setFreeCredit }) => {
       {isActive.isActive ? (
         <Available handleChoosePlayer={handleChoosePlayer}></Available>
       ) : (
-        <Selected selectedPlayers={choosePlayer}></Selected>
+        <Selected handleRemovePlayer={handleRemovePlayer} handleAS={handleAS} selectedPlayers={choosePlayer}></Selected>
       )}
     </div>
   );
