@@ -1,15 +1,20 @@
 import Available from "../Available/Available";
 import SelectedPlayers from "../SelectedPlayers/SelectedPlayers";
 
-const Selected = ({selectedPlayers, handleRemovePlayer}) => {
+const Selected = ({setIsActive, selectedPlayers, handleRemovePlayer}) => {
     // console.log(selectedPlayers)
-    
+    const setByPass = () => {
+        setIsActive({
+    isActive: true,
+    status: "available"
+  })
+    }
     return (
-        <div>
+        <div className="mb-30">
             {
                 selectedPlayers.map(player => <SelectedPlayers handleRemovePlayer={handleRemovePlayer} key={player.id} player={player}></SelectedPlayers>)
             }
-            <button  className="btn btn-warning">Add more player</button>
+            <button onClick={setByPass}  className="btn btn-warning">Add more player</button>
         </div>
     );
 };

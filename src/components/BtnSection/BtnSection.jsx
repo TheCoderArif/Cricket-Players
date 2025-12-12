@@ -2,7 +2,7 @@ import { useState } from "react";
 import Available from "../Available/Available";
 import Selected from "../Selected/Selected";
 
-const BtnSection = ({ handleAS, isActive, freeCredit, setFreeCredit }) => {
+const BtnSection = ({setIsActive, handleAS, isActive, freeCredit, setFreeCredit }) => {
   const availableClicked = () => {
     handleAS("available");
     // console.log(isActive);
@@ -95,7 +95,7 @@ const BtnSection = ({ handleAS, isActive, freeCredit, setFreeCredit }) => {
       {isActive.isActive ? (
         <Available handleChoosePlayer={handleChoosePlayer}></Available>
       ) : (
-        <Selected handleRemovePlayer={handleRemovePlayer} handleAS={handleAS} selectedPlayers={choosePlayer}></Selected>
+        <Selected setIsActive={setIsActive} handleRemovePlayer={handleRemovePlayer} handleAS={handleAS} selectedPlayers={choosePlayer}></Selected>
       )}
     </div>
   );

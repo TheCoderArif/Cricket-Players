@@ -3,6 +3,8 @@ import "./App.css";
 import Banner from "./components/Banner/Banner";
 import Header from "./components/Header/Header";
 import BtnSection from "./components/BtnSection/BtnSection";
+import Newsletter from "./components/Newsletter/Newsletter";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [freeCredit, setFreeCredit] = useState(0);
@@ -51,8 +53,16 @@ function App() {
         </section>
 
         <section>
-          <BtnSection  setFreeCredit={setFreeCredit} freeCredit={freeCredit} handleAS={handleAS} isActive={isActive}></BtnSection>
+          <BtnSection setIsActive={setIsActive}  setFreeCredit={setFreeCredit} freeCredit={freeCredit} handleAS={handleAS} isActive={isActive}></BtnSection>
         </section>
+
+        <section>
+          <Newsletter></Newsletter>
+        </section>
+
+        <footer>
+          <Footer></Footer>
+        </footer>
 
         
       </div>

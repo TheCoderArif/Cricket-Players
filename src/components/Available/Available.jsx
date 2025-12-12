@@ -9,7 +9,7 @@ const Available = ({handleChoosePlayer}) => {
       .then((data) => setAvailablePlayers(data));
   }, []);
   return (
-    <div>
+    <div className="mb-30">
       {/* <h1>Available Players</h1> */}
 
       <div className=" grid  grid-cols-3 gap-10">
