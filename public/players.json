@@ -78,5 +78,15 @@
     "hand": "Right-arm leg-spin",
     "rating": 93,
     "price": 1900000
-  }
+  },
+  {
+  "id": 9,
+  "name": "AB de Villiers",
+  "img": "https://i.ibb.co.com/LXBf1H5t/tcrc7qcc-ab-de-villiers-625x300-02-August-25.webp",
+  "region": "South Africa",
+  "playing_type": "Batsman",
+  "hand": "Right-hand bat",
+  "rating": 96,
+  "price": 2500000
+}
 ]

@@ -3,7 +3,7 @@ import { BsCoin } from "react-icons/bs";
 import './Header.css'
 const Header = ({freeCredit}) => {
     return (
-        <div className=" flex items-center justify-between mt-8 h-18">
+        <div className=" flex items-center justify-between mt-8 h-18 stickyh">
 
             <div className=" w-16 ">
                 <img src={profile} alt="" />

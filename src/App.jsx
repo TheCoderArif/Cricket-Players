@@ -14,7 +14,7 @@ function App() {
 
 
   const handleFreeCredit = () => {
-    const clickedFreeCredit = freeCredit + 60000;
+    const clickedFreeCredit = freeCredit + 500000;
     setFreeCredit(clickedFreeCredit);
     // console.log("clicked");
   };
@@ -49,7 +49,7 @@ function App() {
         </section>
 
         <section>
-          <BtnSection handleAS={handleAS} isActive={isActive}></BtnSection>
+          <BtnSection setFreeCredit={setFreeCredit} freeCredit={freeCredit} handleAS={handleAS} isActive={isActive}></BtnSection>
         </section>
 
         

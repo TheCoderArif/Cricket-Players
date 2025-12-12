@@ -2,8 +2,8 @@ import { CgProfile } from "react-icons/cg";
 import { FaFlag } from "react-icons/fa";
 import { BiDollar } from "react-icons/bi";
 
-const AvailablePlayers = ({ player }) => {
-  const { name, img, region, playing_type, hand, rating, price } = player;
+const AvailablePlayers = ({ player, handleChoosePlayer }) => {
+  const { name, img, region, playing_type, hand,  price } = player;
   return (
     <div>
       <div className="border border-gray-200 card bg-base-400 w-86 shadow-sm">
@@ -35,7 +35,7 @@ const AvailablePlayers = ({ player }) => {
           <div className="flex justify-between w-full">
             <div className="font-bold text-xm flex items-center">Price: <BiDollar></BiDollar>{price}</div >
             <div className=" text-xm text-gray-500">
-                <button className="h-8 btn btn-outline">Choose player</button>
+                <button onClick={() => handleChoosePlayer(player)} className="h-8 btn btn-outline">Choose player</button>
             </div >
           </div>
 

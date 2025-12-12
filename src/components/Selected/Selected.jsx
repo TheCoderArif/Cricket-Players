@@ -1,8 +1,12 @@
+import SelectedPlayers from "../SelectedPlayers/SelectedPlayers";
 
-const Selected = () => {
+const Selected = ({selectedPlayers}) => {
+    // console.log(selectedPlayers)
     return (
         <div>
-            Selected Players
+            {
+                selectedPlayers.map(player => <SelectedPlayers key={player.id} player={player}></SelectedPlayers>)
+            }
         </div>
     );
 };
